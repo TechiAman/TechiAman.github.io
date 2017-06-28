@@ -110,3 +110,11 @@
     .tab.active {
        display: block;
     }
+#nameDetails
+{
+    display: none;
+}
+#messageScreen
+{
+    display: none;
+}
