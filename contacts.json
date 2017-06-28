@@ -1,0 +1,35 @@
+{
+"contacts":
+	[
+	  {
+		"name": "Abhishek Aman",
+		"phone": "8260701520",
+		"email": "aman.abhishek874@gmail.com"
+	  },
+	  {
+		"name": "Harshita Yadav",
+		"phone": "9980946807",
+		"email": "gaearon@somewhere.com"
+	  },
+	  {
+		"name": "Harpreet Singh",
+		"phone": "9953781268",
+		"email": "floydophone@somewhere.com"
+	  },
+	  {
+		"name": "Suraj Sharma",
+		"phone": "9692892741",
+		"email": "zpao@somewhere.com"
+	  },
+	  {
+		"name": "Rachit Bhargav",
+		"phone": "8318369619",
+		"email": "rpflorence@somewhere.com"
+	  },
+	  {
+		"name": "Mr. Anonymous",
+		"phone": "9971792703",
+		"email": "sebmarkbage@here.com"
+	  }
+	]
+}
