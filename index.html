@@ -1,148 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<meta charset="utf-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no">
-
 <head>
-	<title>Artificial Intelligence</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<script src="jquery.min.js"></script>
-	<script src="bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/chart.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </head>
-<style>
-body{
-	min-width: 100%; 
-	
-}
-.container-fluid{
-	min-width: 100%; 
-	
-}
-.rowOne{
-	background-image:url("background.jpeg");
-	min-width: 100%; 
-	height: 662px;
-	background-size: 100% 100%;
-}
-.subrowOne{
-	
-	height: 15%;
-}
-.header{
-	color: white;
-    padding-top: 2%;
-    font-family: helvetica;
-    padding-left: 2%;
-}
-.headericon{
-	color:white;
-	margin-left: 9%;
-    font-size: 16px;
-}
-.headericon:hover{
-	color:white;
-	margin-left: 9%;
-    font-size: 18px;
-	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: none;
-}
-.AIVideo{
-	
-    margin-top: 4%;
-    margin-left: 8%;
-    width: 55%;
-    height: 392px;
-}
-.AIdetails{
-	color: white;
-    font-family: helvetica;
-    margin-top: 4%;
-    margin-left: 3%;
-    text-align: justify;
-    width: 30%;
-    font-size: 16px;
-}
-.rowTwo{
-	background-color:#011133;
-	height:400px
-}
-.rowTwoHeading{
-	color: white;
-    text-align: center;
-    font-size: 35px;
-    padding-top: 2%;
-}
-.services{
-	height:314px;
-	color:white;
-	font-family:helvetica;
-	text-align:center;
-
-}
-.serviceHeading{
-	padding-top: 5%;
-    font-size: 20px;
-}
-.servicePara{
-	padding-top: 4%;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-</style>
-<body>
-	<div class="container-fluid">
-		<div class="row-fluid rowOne">
-			<div class="row-fluid subrowOne">
-				<p class="header">
-					<span style="font-size: 42px; font-weight: bold;">ARTIFICIAL INTELLIGENCE</span>
-					<a href="#"><span class="headericon">HOME</span></a>
-					<a href="#"><span class="headericon">ABOUT</span></a>
-					<a href="#"><span class="headericon">CONTACTS</span></a>
-					<a href="#"><span class="headericon">HELP</span></a>
-				</p>
-			</div>
-			<div class="row-fluid subrowTwo">
-				<div class="col-md-8 AIVideo">
-					<iframe  style="width: 100%; height: 100%; " src="https://www.youtube.com/embed/53K1dMyslJg?autoplay=1"></iframe>
-				</div>
-				<div class="col-md-4 AIdetails">
-					<p>Artificial intelligence (AI, also machine intelligence, MI) is intelligence exhibited by machines, rather than humans or other animals (natural intelligence, NI). In computer science, the field of AI research defines itself as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of success at some goal.Colloquially, the term "artificial intelligence" is applied when a machine mimics "cognitive" functions that humans associate with other human minds, such as "learning" and "problem solving".</p>
-					<p>The scope of AI is disputed: as machines become increasingly capable, task considered as requiring "intelligence" are often removed from the definition, a phenomenon known as the AI effect, leading to the quip "AI is whatever hasn't been done yet."[3] For instance, optical character recognition is frequently excluded from "artificial intelligence", having become a routine technology.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row-fluid rowTwo">
-			<div class="row-fluid rowTwoHeading">
-				<p>OUR SERVICES</p>
-			</div>
-			<div class="row-fluid rowTwoDivisions">
-				<div class="col-md-4 services">
-					<p class="serviceHeading">RESIDENTIAL</p>
-					<img src="Home.png" style="height: 30%;">
-					<p class="servicePara">In the future, real estate portals won't make recommendations based on physical characteristics , but based on the consumer's personal value system.  Properties will be matched to individuals based on personality traits and preferences. </p>
-				</div>
-				<div class="col-md-4 services">
-					<p class="serviceHeading">COMMERCIAL</p>
-					<img src="location.png" style="height: 30%;">
-					<p class="servicePara">In the future, real estate portals won't make recommendations based on physical characteristics , but based on the consumer's personal value system.  Properties will be matched to individuals based on personality traits and preferences. </p>
-				</div>
-				<div class="col-md-4 services">
-					<p class="serviceHeading">AUTOMOTIVE</p>
-					<img src="automotive.png" style="height: 30%;">
-					<p class="servicePara">In the future, real estate portals won't make recommendations based on physical characteristics , but based on the consumer's personal value system.  Properties will be matched to individuals based on personality traits and preferences. </p>
-				</div>
-			</div>
-		</div>
+<body data-ng-app="myApp">
+	<div class="chart-div" data-ng-controller="myController" ng-init="getData()">
+		<canvas id="myChart" style="display: block;width: 800px;height: 350px;"></canvas>
 	</div>
+
+
 </body>
 </html>
